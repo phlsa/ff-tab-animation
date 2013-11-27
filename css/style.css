@@ -1,0 +1,50 @@
+.container {
+	width: 456px;
+	height: 72px;
+	background-image: url('../img/background.png');
+	background-size: 456px 72px;
+	background-repeat: no-repeat;
+	padding-left: 176px;
+	padding-top:3.5px;
+}
+
+.new-tab {
+	position: relative;
+	float:left;
+	width: 216px;
+	height: 35px;
+	background-image: url('../img/left.png'),
+					  url('../img/right.png'),
+					  url('../img/middle.png');
+	background-repeat: no-repeat, no-repeat, repeat-x;
+	background-size: auto 35px;
+	background-position: left, right, center;
+	transition: all .3s ease;
+	display:none;
+}
+
+.new-tab.closed {
+	width: 52px;
+}
+
+.plus {
+	float: left;
+	width: 19px;
+	height: 29px;
+	background-image: url('../img/plus.png');
+	background-size: 100%;
+	margin-top: 6px;
+	margin-left: -2px;
+}
+
+.text {
+	width: 155px;
+	height: 35px;
+	background-image:  url('../img/overlay.png');
+	background-size: 100%;
+	opacity: 1;
+	position: absolute;
+	left: 33px;
+	transition: all .2s ease-out;
+}
+.text.closed { opacity: 0 }
